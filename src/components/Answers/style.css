@@ -1,0 +1,20 @@
+.wrapper-answers {
+  grid-area: answers;
+  background-color: #303030;
+  padding: .5rem;
+  height: 127px;
+  border-radius: 0.5rem;
+  border: 1px solid #555;
+  width: 380px;
+  position: absolute;
+  left: 74px;
+  top: 220px;
+}
+
+.answers-option__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  margin: 0;
+}

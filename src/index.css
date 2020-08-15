@@ -1,0 +1,7 @@
+body {
+  margin: 0;
+  /* background-color: #222; */
+  background-image: url(./images/nice-background.svg);
+  color: #fff;
+  font-family:  'Roboto', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}

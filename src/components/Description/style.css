@@ -1,0 +1,35 @@
+.wrapper-description {
+  grid-area: description;
+  position: absolute;
+  left: 74px;
+  bottom: 190px;
+  width: 380px;
+  background-color: #303030;
+    border: 1px solid #555;
+  padding: .5rem;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'image name'
+                         'audio audio'
+                         'info info';
+}
+
+.description__image {
+  grid-area: image;
+  height: 80px;
+  width: 80px;
+}
+
+.description__name {
+  grid-area: name;
+  align-self: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.description__text {
+  grid-area: info;
+  align-items: center;
+}

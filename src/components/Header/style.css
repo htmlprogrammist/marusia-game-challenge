@@ -1,0 +1,10 @@
+.wrapper-header {
+  grid-area: header;
+  border-radius: .5rem;
+  padding: 0 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
