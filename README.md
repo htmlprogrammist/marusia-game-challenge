@@ -6,6 +6,9 @@
 
 https://htmlprogrammist-marusia-game-challange.netlify.com/
 
+### Repository
+https://github.com/htmlprogrammist/marusia-game-challenge/tree/master
+
 ## Описание основных блоков
 
 - блок с вопросом содержит аудиоплеер с записью голоса птицы и заглушки на месте названия и изображения птицы. Когда игрок выбирает правильный ответ, в блоке с вопросом отображаются название и изображение птицы, голос которой звучал.

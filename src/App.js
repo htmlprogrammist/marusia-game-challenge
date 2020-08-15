@@ -113,7 +113,8 @@ class App extends React.Component {
         <div className='app-container'>
           <div>
             <h1 className="congratulations-h1">Поздравляем!</h1>
-            <p className="congratulations">Вы прошли викторину и набрали {this.state.currentScore} из 30 возможных баллов</p>
+            <p className="congratulations">Вы прошли викторину и набрали {this.state.currentScore} из 30 возможных
+              баллов</p>
           </div>
           <Button
             cb={this.updateApp}
@@ -123,6 +124,16 @@ class App extends React.Component {
           <section className="logo">
             <img className="logo-img" src={img} alt="logo-white"/>
             <h1>Егор Бадмаев</h1>
+            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+            <a className="link" target="_blank" href="https://github.com/htmlprogrammist">GitHub |</a>
+            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+            <a className="link" target="_blank" href="https://vk.com/htmlprogrammist"> ВКонтакте |</a>
+            <a className="link"> Telegram: @htmlprogrammist</a>
+            <p className="description-about__myself">Меня зовут Бадмаев Егор. Мне 16 лет, проживаю в городе Элиста,
+              Республика Калмыкия.</p>
+            <p className="description-about__myself">Я учусь в МБОУ "Элистинский лицей", которое входит в ТОП-100 лучших
+              школ России.</p>
+            <p className="description-about__myself">Занимаюсь программированием уже 1 год.</p>
           </section>
         </div>
       )
@@ -136,6 +147,16 @@ class App extends React.Component {
           <section className="logo">
             <img className="logo-img" src={img} alt="logo-white"/>
             <h1>Егор Бадмаев</h1>
+            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+            <a className="link" target="_blank" href="https://github.com/htmlprogrammist">GitHub |</a>
+            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+            <a className="link" target="_blank" href="https://vk.com/htmlprogrammist"> ВКонтакте |</a>
+            <a className="link"> Telegram: @htmlprogrammist</a>
+            <p className="description-about__myself">Меня зовут Бадмаев Егор. Мне 16 лет, проживаю в городе Элиста,
+              Республика Калмыкия.</p>
+            <p className="description-about__myself">Я учусь в МБОУ "Элистинский лицей", которое входит в ТОП-100 лучших
+              школ России.</p>
+            <p className="description-about__myself">Занимаюсь программированием уже 1 год.</p>
           </section>
           {this.playAudio(victorySound)}
         </div>
@@ -166,9 +187,15 @@ class App extends React.Component {
             <img className="logo-img" src={img} alt="logo-white"/>
             <h1>Егор Бадмаев</h1>
             {/* eslint-disable-next-line react/jsx-no-target-blank */}
-            <a className="link" target="_blank" href="https://github.com/htmlprogrammist">GitHub</a>
-            <a className="link" > Telegram: @htmlprogrammist</a>
-            <p></p>
+            <a className="link" target="_blank" href="https://github.com/htmlprogrammist">GitHub |</a>
+            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+            <a className="link" target="_blank" href="https://vk.com/htmlprogrammist"> ВКонтакте |</a>
+            <a className="link"> Telegram: @htmlprogrammist</a>
+            <p className="description-about__myself">Меня зовут Бадмаев Егор. Мне 16 лет, проживаю в городе Элиста,
+              Республика Калмыкия.</p>
+            <p className="description-about__myself">Я учусь в МБОУ "Элистинский лицей", которое входит в ТОП-100 лучших
+              школ России.</p>
+            <p className="description-about__myself">Занимаюсь программированием уже 1 год.</p>
           </section>
         </div>
       )
