@@ -20,6 +20,8 @@ function Question(props) {
       <span className='question__name'>{(props.visibility) ? name : '*******'}</span>
       <AudioPlayer
         src={audio}
+        showVolumeControl={false}
+        showLoopControl={false}
         showJumpControls={false}
         autoPlayAfterSrcChange={false}
       />
