@@ -10,6 +10,7 @@ import wrongAnswer from './data/wrongAnswer.mp3';
 import victorySound from './data/victory.mp3';
 import getRandomInteger from './utils/getRandomInteger';
 import img from './images/logo-grad.png'
+import AboutMyself from "./components/AboutMyself";
 
 class App extends React.Component {
   constructor(props) {
@@ -121,20 +122,7 @@ class App extends React.Component {
             isActive='true'
             message='Сыграть ещё раз'
           />
-          <section className="logo">
-            <img className="logo-img" src={img} alt="logo-white"/>
-            <h1>Егор Бадмаев</h1>
-            {/* eslint-disable-next-line react/jsx-no-target-blank */}
-            <a className="link" target="_blank" href="https://github.com/htmlprogrammist">GitHub |</a>
-            {/* eslint-disable-next-line react/jsx-no-target-blank */}
-            <a className="link" target="_blank" href="https://vk.com/htmlprogrammist"> ВКонтакте |</a>
-            <a className="link"> Telegram: @htmlprogrammist</a>
-            <p className="description-about__myself">Меня зовут Бадмаев Егор. Мне 16 лет, проживаю в городе Элиста,
-              Республика Калмыкия.</p>
-            <p className="description-about__myself">Я учусь в МБОУ "Элистинский лицей", которое входит в ТОП-100 лучших
-              школ России.</p>
-            <p className="description-about__myself">Занимаюсь программированием уже 1 год.</p>
-          </section>
+          <AboutMyself/>
         </div>
       )
     } else if (+this.state.currentScore === 30) {
@@ -144,20 +132,7 @@ class App extends React.Component {
             <h1 className="congratulations-h1">Поздравляем!</h1>
             <p className="congratulations">Вы прошли викторину и набрали максимальное количество баллов</p>
           </div>
-          <section className="logo">
-            <img className="logo-img" src={img} alt="logo-white"/>
-            <h1>Егор Бадмаев</h1>
-            {/* eslint-disable-next-line react/jsx-no-target-blank */}
-            <a className="link" target="_blank" href="https://github.com/htmlprogrammist">GitHub |</a>
-            {/* eslint-disable-next-line react/jsx-no-target-blank */}
-            <a className="link" target="_blank" href="https://vk.com/htmlprogrammist"> ВКонтакте |</a>
-            <a className="link"> Telegram: @htmlprogrammist</a>
-            <p className="description-about__myself">Меня зовут Бадмаев Егор. Мне 16 лет, проживаю в городе Элиста,
-              Республика Калмыкия.</p>
-            <p className="description-about__myself">Я учусь в МБОУ "Элистинский лицей", которое входит в ТОП-100 лучших
-              школ России.</p>
-            <p className="description-about__myself">Занимаюсь программированием уже 1 год.</p>
-          </section>
+          <AboutMyself/>
           {this.playAudio(victorySound)}
         </div>
       )
@@ -183,20 +158,7 @@ class App extends React.Component {
             isActive={this.state.isActiveButton}
             message='Следующий вопрос'
           />
-          <section className="logo">
-            <img className="logo-img" src={img} alt="logo-white"/>
-            <h1>Егор Бадмаев</h1>
-            {/* eslint-disable-next-line react/jsx-no-target-blank */}
-            <a className="link" target="_blank" href="https://github.com/htmlprogrammist">GitHub |</a>
-            {/* eslint-disable-next-line react/jsx-no-target-blank */}
-            <a className="link" target="_blank" href="https://vk.com/htmlprogrammist"> ВКонтакте |</a>
-            <a className="link"> Telegram: @htmlprogrammist</a>
-            <p className="description-about__myself">Меня зовут Бадмаев Егор. Мне 16 лет, проживаю в городе Элиста,
-              Республика Калмыкия.</p>
-            <p className="description-about__myself">Я учусь в МБОУ "Элистинский лицей", которое входит в ТОП-100 лучших
-              школ России.</p>
-            <p className="description-about__myself">Занимаюсь программированием уже 1 год.</p>
-          </section>
+          <AboutMyself/>
         </div>
       )
     }
