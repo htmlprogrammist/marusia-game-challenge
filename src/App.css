@@ -1,0 +1,53 @@
+.app-container {
+  height: 815px;
+  max-width: 564px;
+  position: relative;
+  left: 90px;
+  grid-template-columns: 1fr;
+  margin: 1rem;
+  grid-template-areas:    "question"
+                          "answers"
+                          "description"
+                          "button";
+  grid-template-rows: auto auto auto auto 50px;
+  /* max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto 50px;
+  grid-template-areas:  "header header"
+                        "question question"
+                        "answers description"
+                        "button button";
+  grid-gap: 1rem; */
+  background-image: url('./images/ipad-mockup-6.png');
+  background-repeat: no-repeat;
+  background-size: 100vh 100%;
+}
+
+.logo {
+  position: absolute;
+  top: 60px;
+  left: 620px;
+}
+
+.logo-img {
+  height: 200px;
+}
+
+h1 {
+  position: absolute;
+  color: #222;
+}
+@media screen and (max-width: 756px) {
+  .app-container {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    grid-template-areas:  "header"
+                          "question"
+                          "answers"
+                          "description"
+                          "button";
+    grid-template-rows: auto auto auto auto 50px;
+  }
+}
