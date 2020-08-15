@@ -107,29 +107,36 @@ class App extends React.Component {
   }
 
   render() {
-    console.log('Для проверки Extra Scope: правильный вариант:', +this.state.rightAnswer + 1);
+    console.log('Ответ: ', +this.state.rightAnswer + 1);
     if (+this.state.level === birdsData.length) {
       return (
         <div className='app-container'>
           <div>
-            <h1>Поздравляем!</h1>
-            <p>Вы прошли викторину и набрали {this.state.currentScore} из 30 возможных баллов</p>
+            <h1 className="congratulations-h1">Поздравляем!</h1>
+            <p className="congratulations">Вы прошли викторину и набрали {this.state.currentScore} из 30 возможных баллов</p>
           </div>
           <Button
             cb={this.updateApp}
             isActive='true'
-            message='Попробовать ещё раз'
+            message='Сыграть ещё раз'
           />
+          <section className="logo">
+            <img className="logo-img" src={img} alt="logo-white"/>
+            <h1>Егор Бадмаев</h1>
+          </section>
         </div>
       )
     } else if (+this.state.currentScore === 30) {
       return (
         <div className='app-container'>
           <div>
-            <h1>Поздравляем!</h1>
-            <p>Вы прошли викторину и набрали максимальное количество баллав</p>
-            <h2>Отличный результат</h2>
+            <h1 className="congratulations-h1">Поздравляем!</h1>
+            <p className="congratulations">Вы прошли викторину и набрали максимальное количество баллов</p>
           </div>
+          <section className="logo">
+            <img className="logo-img" src={img} alt="logo-white"/>
+            <h1>Егор Бадмаев</h1>
+          </section>
           {this.playAudio(victorySound)}
         </div>
       )
@@ -158,6 +165,10 @@ class App extends React.Component {
           <section className="logo">
             <img className="logo-img" src={img} alt="logo-white"/>
             <h1>Егор Бадмаев</h1>
+            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+            <a className="link" target="_blank" href="https://github.com/htmlprogrammist">GitHub</a>
+            <a className="link" > Telegram: @htmlprogrammist</a>
+            <p></p>
           </section>
         </div>
       )
