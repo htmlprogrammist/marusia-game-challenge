@@ -4,7 +4,7 @@
 
 ### Demo
 
-https://htmlprogrammist-marusia-game-challange.netlify.app/
+https://htmlprogrammist-marusia-game-challenge.netlify.app/
 
 ### Repository
 https://github.com/htmlprogrammist/marusia-game-challenge/tree/master
